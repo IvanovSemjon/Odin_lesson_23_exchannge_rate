@@ -25,7 +25,7 @@ def get_exchange_rate():
                 exchange_rate = data["conversion_rates"][target_code]
                 target_name = cur[target_code]
                 base_name = cur[base_code]
-                mb.showinfo("Курс обмена", f"Курс за один {base_name} составляет: {exchange_rate:.2f} {target_name}.")
+                mb.showinfo("Курс обмена", f"Один {base_name} равняется: {exchange_rate:.2f} {target_name}.")
             else:
                 mb.showerror("Ошибка", f"Валюта {target_code} не найдена")
         except Exception as e:
